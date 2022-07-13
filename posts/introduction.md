@@ -1,6 +1,6 @@
 ---
 title: 'Funny'
-date: '2022-7-14'
+date: '2022-07-14'
 ---
 
 Interesting.
