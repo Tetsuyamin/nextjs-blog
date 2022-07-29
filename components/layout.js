@@ -14,7 +14,7 @@ export default function Layout({ children, home }) {
     <Navbar />
     <div className={styles.container}>
       <Head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/images/tet_ua.png" />
         <meta
           name="description"
           content="Tetsuyamin's First Web Creation"

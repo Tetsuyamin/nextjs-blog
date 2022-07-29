@@ -14,7 +14,7 @@ export const Navbar = () => {
       <nav className='flex items-center flex-wrap bg-sky-500/75 p-3'>
         <Link href='/'>
           <a className='inline-flex items-center p-2 mr-4'>
-            <img src="https://lh5.googleusercontent.com/fP97YzE1RSMHTCnmpl8exyCiBnPpSaoujCDKS_pFMupoLOhqhGeRbwKdasbyUYFZmHEqx302IbPz2CLv_ECwC10=w16383" className={utilStyle.size8px} role="img" aria-label="Site home" jsname="SwcDWb">
+            <img src="/images/tet_ua.png" className={utilStyle.size8px}>
 
             </img>
             <span className='text-xl text-sky-900 font-medium tracking-wide'>
