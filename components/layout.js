@@ -10,6 +10,8 @@ export const siteTitle = 'Tetsuyamin Blog';
 
 export default function Layout({ children, home }) {
   return (
+    <>
+    <Navbar />
     <div className={styles.container}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
@@ -26,7 +28,7 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <Navbar />
+      
       <header className={styles.header}>
         {home ? (
           <>
@@ -71,5 +73,6 @@ export default function Layout({ children, home }) {
         </div>
       )}
     </div>
+    </>
   );
 }
