@@ -14,6 +14,9 @@ export default function Layout({ children, home }) {
     <Navbar />
     <div className={styles.container}>
       <Head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet" />
         <link rel="icon" href="/images/tet_ua.png" />
         <meta
           name="description"
@@ -40,7 +43,10 @@ export default function Layout({ children, home }) {
               width={144}
               alt={name}
             />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
+            <h1 className='font-bold text-5xl text-cyan-700 p-5'>{name}</h1>
+            <div class='p-5'>
+
+            </div>
           </>
         ) : (
           <>
@@ -58,7 +64,7 @@ export default function Layout({ children, home }) {
             </Link>
             <h2 className={utilStyles.headingLg}>
               <Link href="/">
-                <a className={utilStyles.colorInherit}>{name}</a>
+                <a className='font-bold text-cyan-800'>{name}</a>
               </Link>
             </h2>
           </>
