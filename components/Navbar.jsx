@@ -17,12 +17,12 @@ export const Navbar = () => {
             <img src="https://lh5.googleusercontent.com/fP97YzE1RSMHTCnmpl8exyCiBnPpSaoujCDKS_pFMupoLOhqhGeRbwKdasbyUYFZmHEqx302IbPz2CLv_ECwC10=w16383" className={utilStyle.size8px} role="img" aria-label="Site home" jsname="SwcDWb">
 
             </img>
-            <span className='text-xl text-sky-600 font-bold tracking-wide'>
-              &nbsp;Tetsuyamin.com
+            <span className='text-xl text-sky-900 font-medium tracking-wide'>
+              &nbsp;tetsuyamin.com
             </span>
           </a>
         </Link>
-        <button className=' inline-flex p-3 hover:bg-sky-800/75 rounded lg:hidden text-white ml-auto hover:text-white outline-none' onClick={handleClick}>
+        <button className=' inline-flex p-3 hover:bg-sky-800/75 rounded md:hidden lg:hidden text-white ml-auto outline-none' onClick={handleClick}>
           <svg
             className='w-6 h-6'
             fill='none'
@@ -38,16 +38,16 @@ export const Navbar = () => {
             />
           </svg>
         </button>
-        <div className={`${ active ? '' : 'hidden'} w-full lg:inline-flex lg:flex-grow lg:w-auto`}>
-          <div className='lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto'>
+        <div className={`${ active ? '' : 'hidden'} w-full md:inline-flex md:flex-grow md:w-auto lg:inline-flex lg:flex-grow lg:w-auto`}>
+          <div className='md:inline-flex md:flex-row md:ml-auto md:w-auto md:items-center md:h-auto lg:inline-flex md:inline-flex lg:flex-row md:flex-row lg:ml-auto md:ml-auto lg:w-auto md:w-auto w-full lg:items-center md:items-center items-start  flex flex-col lg:h-auto md:h-auto'>
             <Link href='/'>
-              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-sky-600 hover:text-white '>
+              <a className='md:inline-flex lg:inline-flex md:w-auto lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-sky-600 hover:text-white'>
                 Home
               </a>
             </Link>
 
             <Link href='/posts/introduction'>
-              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-sky-600 hover:text-white'>
+              <a className='md:inline-flex lg:inline-flex md:w-auto lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-sky-600 hover:text-white'>
                 About me
               </a>
             </Link>
