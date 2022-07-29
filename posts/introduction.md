@@ -3,7 +3,7 @@ title: 'Introduction'
 date: '2022-07-14'
 ---
 
-Born in Hiroshima in Dec 1998
+Born in Hiroshima in Dec 1998!
 
 **Education**
 
