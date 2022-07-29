@@ -28,9 +28,9 @@ export default function Post({ postData }) {
                 <title>{postData.title}</title>
             </Head>
         <article>
-          <div class='rounded-md border-4 border-b-8 border-amber-200 bg-amber-100'>
+          <div class='rounded-md border-2 border-b-8 border-slate-300 bg-slate-100'>
           <div class='m-2 bg-teal-200 rounded border-2 border-teal-600'>
-            <h1 className='text-teal-900 text-5xl font-bold p-2'>{postData.title}</h1>
+            <h1 className='text-gray-900 text-3xl font-bold p-2'>{postData.title}</h1>
             <div className='pl-3 text-teal-50 bg-teal-600 font-medium'>
             <Date dateString={postData.date} />
             </div>
