@@ -35,7 +35,7 @@ export default function Layout({ children, home }) {
       
       <header className={styles.header}>
         {home ? (
-          <>
+          <motion.div align="center" initial={{scale:0.75}} animate={{scale:1}}>
             <Image
               priority
               src="/images/profile.jpg"
@@ -48,32 +48,33 @@ export default function Layout({ children, home }) {
             <div class='p-5'>
 
             </div>
-          </>
+          </motion.div>
         ) : (
-          <>
+          <motion.div align="center" initial={{scale:1}} animate={{scale:0.75}}>
             <Link href="/">
               <a>
                 <Image
                   priority
                   src="/images/profile.jpg"
                   className={utilStyles.borderCircle}
-                  height={108}
-                  width={108}
+                  height={144}
+                  width={144}
                   alt={name}
                 />
               </a>
             </Link>
-            <h2 className={utilStyles.headingLg}>
+            <h1 className='font-bold text-5xl text-cyan-700 p-5'>
               <Link href="/">
-                <a className='font-bold text-cyan-800'>{name}</a>
+                <a>{name}</a>
               </Link>
-            </h2>
-          </>
+            </h1>
+          </motion.div>
         )}
       </header>
+      {home ? (
       <motion.div
-        initial={{opacity:0}}
-        animate={{opacity:1}}
+        initial={{opacity:0, x:-100}}
+        animate={{opacity:1, x:0}}
         transition={{delay:0}}
       >
       <main>{children}</main>
@@ -84,7 +85,22 @@ export default function Layout({ children, home }) {
           </Link>
         </div>
       )}
-      </motion.div>
+      </motion.div>) : (
+      <motion.div
+      initial={{opacity:0, x:100}}
+      animate={{opacity:1, x:0}}
+      transition={{delay:0}}
+    >
+    <main>{children}</main>
+    {!home && (
+      <div className={styles.backToHome}>
+        <Link href="/">
+          <a>← Back to home</a>
+        </Link>
+      </div>
+    )}
+    </motion.div>
+      )}
 
     </div>
     </>
