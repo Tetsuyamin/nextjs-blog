@@ -49,7 +49,7 @@ export default function Home({allPostsData}) {
           {allPostsData.map(({ id, date, title }) => (
             <>
             <Link href={`/posts/${id}`}>
-              <motion.li whileHover={{scale:1.025}} variants={item} className='ml-4 mr-2 items-center flex-wrap text-teal-900 font-medium bg-teal-400 hover:bg-teal-300 p-3 cursor-pointer border-solid border-teal-500 border-2 border-b-8 hover:border-b-4 hover:mt-1 rounded-md' key={id}>
+              <motion.li whileHover={{scale:1.025}} whileInView={{scale:1}} initial={{scale:0.75}} variants={item} className='ml-4 mr-2 items-center flex-wrap text-teal-900 font-medium bg-teal-400 hover:bg-teal-300 p-3 cursor-pointer border-solid border-teal-500 border-2 border-b-8 hover:border-b-4 hover:mt-1 rounded-md' key={id}>
                   <a>{title}</a>
                 <br/>
                 <small className={`text-slate-700`}>
