@@ -12,8 +12,7 @@ export const siteTitle = 'Tetsuyamin Blog';
 export default function Layout({ children, home }) {
   return (
     <>
-    <Navbar />
-    <div className={styles.container}>
+
       <Head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -32,7 +31,9 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      
+
+      <div className="p-8"></div>
+      <div className={styles.container}>
       <header className={styles.header}>
         {home ? (
           <motion.div align="center" initial={{scale:0.75}} animate={{scale:1}}>
@@ -103,6 +104,7 @@ export default function Layout({ children, home }) {
       )}
 
     </div>
+    <div class="fixed left-0 right-0 top-0"><Navbar /></div>
     </>
   );
 }

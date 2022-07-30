@@ -11,7 +11,7 @@ export const Navbar = () => {
 
   return (
     <>
-      <nav className='flex items-center flex-wrap bg-sky-500/75 p-3'>
+      <nav className='flex items-center flex-wrap bg-sky-500/75 p-3 backdrop-blur-sm'>
         <Link href='/'>
           <a className='inline-flex items-center p-2 mr-4'>
             <img src="/images/tet_ua.png" className={utilStyle.size8px}>
