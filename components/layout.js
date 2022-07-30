@@ -4,6 +4,7 @@ import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 import {Navbar} from '../components/Navbar';
+import {motion} from 'framer-motion';
 
 const name = 'Ryo Hattori';
 export const siteTitle = 'Tetsuyamin Blog';
@@ -70,6 +71,11 @@ export default function Layout({ children, home }) {
           </>
         )}
       </header>
+      <motion.div
+        initial={{opacity:0}}
+        animate={{opacity:1}}
+        transition={{delay:0}}
+      >
       <main>{children}</main>
       {!home && (
         <div className={styles.backToHome}>
@@ -78,6 +84,8 @@ export default function Layout({ children, home }) {
           </Link>
         </div>
       )}
+      </motion.div>
+
     </div>
     </>
   );

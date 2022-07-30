@@ -5,7 +5,7 @@ import { useState } from 'react';
 export const Navbar = () => {
   const [active, setActive] = useState(false);
 
-  const handleClick =() => {
+  const handleClick = () => {
     setActive(!active);
   };
 

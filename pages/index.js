@@ -1,6 +1,7 @@
 import { getSortedPostsData } from '../lib/posts';
 import Link from 'next/link';
 import Date from '../components/date';
+import { motion } from "framer-motion"
 
 
 export async function getStaticProps() {
